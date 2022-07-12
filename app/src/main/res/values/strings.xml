@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">radiogrup y checkbox</string>
+    <string name="Buton_radio">Radiogrup</string>
+    <string name="Button_checkbox">Checkbox</string>
+    
+    // strings de activity radios
+    <string name="ed1">Ingresar el primer valor</string>
+    <string name="ed2">Ingresar el segundo valor</string>
+    <string name="rd1">Sumar</string>
+    <string name="rd2">Restar</string>
+    <string name="rd3">Multiplicar</string>
+    <string name="rd4">Dividir</string>
+    <string name="bt1">Calcular</string>
+    <string name="tv1">Resultado</string>
+    <string name="bt2">Regresar al menu principal</string>
+
+    // string de activity checkbox
+    <string name="edi1">Ingresar el primer valor</string>
+    <string name="edi2">Ingresar el segundo valor</string>
+    <string name="check1">Sumar</string>
+    <string name="check2">Restar</string>
+    <string name="check3">Multiplicar</string>
+    <string name="check4">Dividir</string>
+    <string name="boton1">Calcular</string>
+    <string name="textView">Resultado</string>
+    <string name="boton2">Regresar al menu principal</string>
+</resources>
