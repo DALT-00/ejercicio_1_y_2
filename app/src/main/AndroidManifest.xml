@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RadiogrupYCheckbox">
         <activity
+            android:name=".spinner"
+            android:exported="false" />
+        <activity
             android:name=".chechbox"
             android:exported="false" />
         <activity

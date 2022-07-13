@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class chechbox extends AppCompatActivity {
     private EditText edi1, edi2;
@@ -34,24 +35,38 @@ public class chechbox extends AppCompatActivity {
 
         int valor_entero = Integer.parseInt(valor_String);
         int valor2_entero = Integer.parseInt(valor2_String);
+        String resultado="";
 
         if (check1.isChecked()==true){
             int suma = valor_entero+valor2_entero;
-            String resultado = String.valueOf(suma);
-            textView.setText("La suma es: "+resultado);
-        } else if (check2.isChecked()==true){
-            int resta = valor_entero-valor2_entero;
-            String resultado = String.valueOf(resta);
-            textView.setText("La resta es: "+resultado);
-        }else if (check3.isChecked()==true){
-            int multiplicar = valor_entero*valor2_entero;
-            String resultado = String.valueOf(multiplicar);
-            textView.setText("La multiplicacion es: "+resultado);
-        }else if (check4.isChecked()==true) {
-            int divicion = valor_entero / valor2_entero;
-            String resultado = String.valueOf(divicion);
-            textView.setText("La divicion es: " + resultado);
+            //String resultado = String.valueOf(suma);
+            //textView.setText("La suma es: "+resultado);
+            resultado = " La suma es: "+suma+" / ";
         }
+        if (check2.isChecked()==true){
+            int resta = valor_entero-valor2_entero;
+            //String resultado = String.valueOf(resta);
+           // textView.setText("La resta es: "+resultado);
+            resultado = resultado+" La resta es: "+resta+" / ";
+        }
+        if (check3.isChecked()==true){
+            int multiplicar = valor_entero*valor2_entero;
+            //String resultado = String.valueOf(multiplicar);
+            //textView.setText("La multiplicacion es: "+resultado);
+            resultado = resultado+" La multiplicacion es: "+multiplicar+" / ";
+        }
+        if (check4.isChecked()==true) {
+            if (valor2_entero != 0){
+                int dividir = valor_entero/valor2_entero;
+                resultado = resultado+" La division es: "+dividir+" / ";
+            }else {
+                Toast.makeText(this, "No se puede dividir entre cero", Toast.LENGTH_LONG).show();
+            }
+            //String resultado = String.valueOf(divicion);
+            //textView.setText("La divicion es: " + resultado);
+
+        }
+        textView.setText(resultado);
     }
 
     // Metodo del boton para regresar al inicio

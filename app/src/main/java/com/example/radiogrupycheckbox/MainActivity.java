@@ -25,4 +25,10 @@ public class MainActivity extends AppCompatActivity {
         Intent s = new Intent(this, chechbox.class);
         startActivity(s);
     }
+
+    // Metodo del boton spinner
+    public void Spinner (View view){
+        Intent s = new Intent(this, spinner.class);
+        startActivity(s);
+    }
 }

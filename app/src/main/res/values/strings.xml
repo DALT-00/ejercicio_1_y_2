@@ -2,7 +2,8 @@
     <string name="app_name">radiogrup y checkbox</string>
     <string name="Buton_radio">Radiogrup</string>
     <string name="Button_checkbox">Checkbox</string>
-    
+    <string name="Button_spennir">Spinner</string>
+
     // strings de activity radios
     <string name="ed1">Ingresar el primer valor</string>
     <string name="ed2">Ingresar el segundo valor</string>
@@ -24,4 +25,11 @@
     <string name="boton1">Calcular</string>
     <string name="textView">Resultado</string>
     <string name="boton2">Regresar al menu principal</string>
+
+    //String de activity spinner
+    <string name="et1">Ingresar el primer valor</string>
+    <string name="et2">Ingresar el segundo valor</string>
+    <string name="b1">Calcular</string>
+    <string name="tv_1">Resultado</string>
+    <string name="b2">Regresar al menu principal</string>
 </resources>
