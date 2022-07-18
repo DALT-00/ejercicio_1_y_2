@@ -27,7 +27,7 @@ public class spinner extends AppCompatActivity {
         tv_1=(TextView)findViewById(R.id.tv_1);
         spinner=(Spinner) findViewById(R.id.spinner);
 
-
+        String [] opciones  = {"Sumar", "Restar", "Multiplicar", "Dividir"};
 
         ArrayAdapter <String> adaptar = new ArrayAdapter<String>(this, R.layout.spinner_item_diego, opciones);
         spinner.setAdapter(adaptar);
